@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Monna;
+    src: url(font/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+}
+@font-face {
+    font-family: veff2;
+    src: url(font/vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.woff2);
+}
+@font-face {
+    font-family: wfviisualsans-reg;
+    src: url(font/WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+}
+@font-face {
+    font-family: wfvisuslsans-semibold;
+    src: url(font/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+
+.nav-container{
+    display: flex;
+    position: relative;
+    z-index: 9996,9996;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    padding: 16px;
+    transition: background-color 0.25s ease-out;
+    gap: 13px;
+}
+
+.nav-container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+}
+
+.nav-button{
+    padding: 6px;
+    display: grid;
+    box-sizing: content-box;
+    flex-shrink: 0;
+    order: -10;
+    width: 24px;
+    cursor: pointer;
+    margin: 0 0 0 calc(-1* 6px);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: none;
+    gap: 4px;
+}
+
+
+.nav-button > * {
+    width: 100%;
+    height: 3px;
+    transform: translate3d(0,0,0);
+    transform-origin: 0% 0px;
+    background-color: rgb(6,3,24);
+    transition: 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border-radius: 1e+07px;
+}
+
+
+.nav-button > :nth-child(2){
+    width: 74%;
+}
+.nav-button > :nth-child(3){
+    width: 50%;
+}
+
+.nav-container a{
+    text-decoration: none;
+    --link-color: #060318;
+    display: flex
+;
+    position: relative;
+    top: -1px;
+    flex-shrink: 0;
+    width: 89px;
+    color: rgb(6, 3, 24);
+    aspect-ratio: 210 / 59;
+}
+
+.nav-container a svg{
+  width: 100%;
+  height: 100%;
+}
+
+.nav-container-elm{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 16px;
+}
+
+
+
+.nav-container-elm2{
+    text-decoration: none;
+    height: 40px;
+    background-color: #060318;
+    font-size: 14px;
+    font-weight: 600;
+    font-feature-settings: "ss01";
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 24px;
+    transition: color 0.15s cubic-bezier(0.32, 0, 0.59, 0.03), background-color, border, border-radius;
+    border: 1.5px solid #0d0c22;
+    border-radius: 999999px;
+    white-space: nowrap;
+    gap: 8px;
+
+    
+
+
+}
+.nav-container-elm a{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Monna;
+}
+
+
+
+.nav-container-elm1-button{
+    border: none;
+    background: none;
+}
