@@ -18,3 +18,59 @@ window.addEventListener('click', (event) => {
 navButton.addEventListener('click', () => {
   navButton.classList.toggle('active');
 });
+
+
+
+
+
+
+
+    const dropdownBtnShots = document.getElementById('dropdown-btnShots');
+    const dropdownShots = document.getElementById('dropdownShots');
+    const svgIcon = document.querySelector('.svg-icon');
+
+  
+    dropdownBtnShots.addEventListener('click', () => {
+    
+        dropdownShots.classList.toggle('activeS');
+     
+        svgIcon.classList.toggle('rotate');
+    });
+
+    
+
+
+
+    const filterBtn=document.getElementById('filterBtn')
+    const filterDrop=document.getElementById('filterDrop')
+
+
+    filterBtn.addEventListener('click',()=>{
+        if (filterDrop.classList.contains('visibleDrop')){
+            filterDrop.style.opacity="0"
+
+
+
+            setTimeout(()=>{
+                filterDrop.style.display="none"
+                filterDrop.classList.remove('visibleDrop')
+            },300)
+        }else{
+            filterDrop.style.display='block'
+
+
+            setTimeout(()=>{
+                filterDrop.style.opacity='1'
+                filterDrop.classList.add('visibleDrop')
+            },10)
+        }
+
+    })
+
+
+
+
+
+
+
+
