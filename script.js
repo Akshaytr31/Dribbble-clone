@@ -72,5 +72,48 @@ navButton.addEventListener('click', () => {
 
 
 
+    const scrollContainer = document.querySelector(".container_block2-scroll");
+    const backButton = document.querySelector(".scroll_span-back");
+    const forwardButton = document.querySelector(".scroll_span-forword");
+    const ulElement = document.querySelector(".container_block2-ul");
+    const scrollAmount = 300; // Adjust as needed for the scrolling amount
+
+    // Initial visibility check
+    checkButtonsVisibility();
+
+    // Scroll forward
+    forwardButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        ulElement.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        setTimeout(checkButtonsVisibility, 300); // Check visibility after scroll
+    });
+
+    // Scroll back
+    backButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        ulElement.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        setTimeout(checkButtonsVisibility, 300); // Check visibility after scroll
+    });
+
+    // Check visibility of navigation buttons
+    function checkButtonsVisibility() {
+        const scrollLeft = ulElement.scrollLeft;
+        const scrollWidth = ulElement.scrollWidth;
+        const clientWidth = ulElement.clientWidth;
+
+        // Hide or show back button
+        if (scrollLeft <= 0) {
+            backButton.style.display = "none";
+        } else {
+            backButton.style.display = "block";
+        }
+
+        // Hide or show forward button
+        if (scrollLeft + clientWidth >= scrollWidth) {
+            forwardButton.style.display = "none";
+        } else {
+            forwardButton.style.display = "block";
+        }
+    }
 
 
