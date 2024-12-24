@@ -21,21 +21,58 @@ navButton.addEventListener('click', () => {
 
 
 
+const shotsDropdown = document.querySelector('.shots-dropdown');
+  const shotsSVG = shotsDropdown.querySelector('svg');
+  const shotsOptions = shotsDropdown.querySelectorAll('.shots-options li');
+  const hiddenInput = shotsDropdown.querySelector('input[type="hidden"]');
+
+  // Toggle dropdown visibility when clicking the SVG icon
+  shotsSVG.addEventListener('click', () => {
+    shotsDropdown.classList.toggle('open');
+    // Rotate the SVG when the dropdown is open
+    shotsSVG.classList.toggle('rotated', shotsDropdown.classList.contains('open'));
+  });
+
+  // Handle option selection
+  shotsOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      shotsDropdown.querySelector('.shots-selected').textContent = option.textContent;
+      hiddenInput.value = option.dataset.value;
+      shotsOptions.forEach(opt => opt.classList.remove('active'));
+      option.classList.add('active');
+      shotsDropdown.classList.remove('open');
+      shotsSVG.classList.remove('rotated'); // Reset rotation when the dropdown is closed
+    });
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener('click', (e) => {
+    if (!shotsDropdown.contains(e.target)) {
+      shotsDropdown.classList.remove('open');
+      shotsSVG.classList.remove('rotated'); // Reset rotation if clicking outside
+    }
+  });
 
 
 
 
-    const dropdownBtnShots = document.getElementById('dropdown-btnShots');
-    const dropdownShots = document.getElementById('dropdownShots');
-    const svgIcon = document.querySelector('.svg-icon');
+
+
+
+
+
+
+    // const dropdownBtnShots = document.getElementById('dropdown-btnShots');
+    // const dropdownShots = document.getElementById('dropdownShots');
+    // const svgIcon = document.querySelector('.svg-icon');
 
   
-    dropdownBtnShots.addEventListener('click', () => {
+    // dropdownBtnShots.addEventListener('click', () => {
     
-        dropdownShots.classList.toggle('activeS');
+    //     dropdownShots.classList.toggle('activeS');
      
-        svgIcon.classList.toggle('rotate');
-    });
+    //     svgIcon.classList.toggle('rotate');
+    // });
 
     
 
@@ -76,44 +113,97 @@ navButton.addEventListener('click', () => {
     const backButton = document.querySelector(".scroll_span-back");
     const forwardButton = document.querySelector(".scroll_span-forword");
     const ulElement = document.querySelector(".container_block2-ul");
-    const scrollAmount = 300; // Adjust as needed for the scrolling amount
+    const scrollAmount = 300;
 
-    // Initial visibility check
     checkButtonsVisibility();
 
-    // Scroll forward
     forwardButton.addEventListener("click", function (e) {
         e.preventDefault();
         ulElement.scrollBy({ left: scrollAmount, behavior: "smooth" });
-        setTimeout(checkButtonsVisibility, 300); // Check visibility after scroll
+        setTimeout(checkButtonsVisibility, 300); 
     });
 
-    // Scroll back
     backButton.addEventListener("click", function (e) {
         e.preventDefault();
         ulElement.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-        setTimeout(checkButtonsVisibility, 300); // Check visibility after scroll
+        setTimeout(checkButtonsVisibility, 300); 
     });
 
-    // Check visibility of navigation buttons
     function checkButtonsVisibility() {
         const scrollLeft = ulElement.scrollLeft;
         const scrollWidth = ulElement.scrollWidth;
         const clientWidth = ulElement.clientWidth;
 
-        // Hide or show back button
         if (scrollLeft <= 0) {
             backButton.style.display = "none";
         } else {
             backButton.style.display = "block";
         }
 
-        // Hide or show forward button
         if (scrollLeft + clientWidth >= scrollWidth) {
             forwardButton.style.display = "none";
         } else {
             forwardButton.style.display = "block";
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const dropdowns = document.querySelectorAll('.custom-dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const selected = dropdown.querySelector('.drop-flex');
+      const optionsContainer = dropdown.querySelector('.dropdown-options');
+      const options = dropdown.querySelectorAll('.dropdown-options li');
+      const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+  
+      
+      selected.addEventListener('click', () => {
+        dropdowns.forEach(d => {
+          if (d !== dropdown) {
+            d.classList.remove('open');
+          }
+        });
+        dropdown.classList.toggle('open');
+      });
+  
+      options.forEach(option => {
+        option.addEventListener('click', () => {
+          dropdown.querySelector('.dropdown-selected').textContent = option.textContent;
+          hiddenInput.value = option.dataset.value;
+  
+          options.forEach(opt => opt.classList.remove('active'));
+          option.classList.add('active');
+  
+          dropdown.classList.remove('open');
+        });
+      });
+    });
+  
+    document.addEventListener('click', e => {
+      dropdowns.forEach(dropdown => {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+        }
+      });
+    });
+      
+      
+
+
+
+
+
+
 
 
