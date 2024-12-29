@@ -1,0 +1,271 @@
+{
+    "items": [
+      {
+        "image": "img/evote.png",
+        "author": {
+          "name": "Evote",
+          "avatar": "https://cdn.dribbble.com/users/11502486/avatars/small/a8456497e26e27118763af6fc5b5fbcc.png?1650726363"
+        },
+        "isPro": true,
+        "likes": {
+          "count": 100,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 350,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Notex App"
+
+      },
+
+      {
+        "image": "img/3d.jpg",
+        "author": {
+          "name": "ThreeDee",
+          "avatar": "https://cdn.dribbble.com/users/6848313/avatars/small/0fc82952cfd3b6d1e496259ff75acadf.png?1611172914"
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 40,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 1500,
+          "icon": "img/watch.svg"
+        },
+        "hover":"3d"
+      },
+
+
+      {
+        "image": "img/3d digit.jpg",
+        "author": {
+          "name": "Zulfa Mahendra",
+          "avatar": "https://cdn.dribbble.com/users/2527679/avatars/small/db89bc7dbdf216d83d32acc265b9a49f.png?1559351910"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 53,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 5200,
+          "icon": "img/watch.svg"
+        },
+        "hover":"3D Digital Security and Privacy"
+      },
+
+      {
+        "image": "img/Plainthink studio.png",
+        "author": {
+          "name": "Plainthink Studio",
+          "avatar":  "https://cdn.dribbble.com/users/970950/avatars/small/99e4a7b3bf179dd023d98ed24e0a8f32.png?1623907697"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 67,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 8200,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Website for a Medical Company ✦ Fundora"
+      },
+
+      {
+        "image": "img/roxan.png",
+        "author": {
+          "name": "Roxana Niculescu",
+          "avatar":  "https://cdn.dribbble.com/users/762263/avatars/small/814736fc039c6b7bd19baa27aba7f8fb.jpg?1423910621"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 30,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 955,
+          "icon": "img/watch.svg"
+        },
+        "hover":"7 Sins"
+      },
+      {
+        "image": "img/stragles.jpg",
+        "author": {
+          "name": "strangelabs",
+          "avatar": "https://cdn.dribbble.com/users/22487016/avatars/small/44f3480c3d00b63c0d0d49e51042294b.png?1733034633"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 89,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 2300,
+          "icon": "img/watch.svg"
+        },
+        "hover":"neurolyze: BCI Brain Computer Interface | Biotech Brand Identity"
+      },
+
+      {
+        "image": "img/dusan.jpg",
+        "author": {
+          "name": "Dusan Sol",
+          "avatar":  "https://cdn.dribbble.com/users/976364/avatars/small/81b91d27f89a6bb2c1e69f9b1e0da718.jpg?1682509323"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 30,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 195,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Gate 35"
+      },
+
+      {
+        "image": "img/lucian.png",
+        "author": {
+          "name": "Lucian Randu",
+          "avatar":  "https://cdn.dribbble.com/users/677572/avatars/small/cd94b72f04f84b0dcf1c1ee3f6bdf2b9.png?1634627780"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 59,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 2000,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Lucian Radu"
+      },
+
+      {
+        "image": "img/rik.png",
+        "author": {
+          "name": "Rik Catlow",
+          "avatar":  "https://cdn.dribbble.com/users/1037/avatars/small/5b47a9d6651de21b76129eebe6f1b89f.png?1733256661"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 65,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 119000,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Gaggle"
+      },
+
+      {
+        "image": "img/grigory.jpg",
+        "author": {
+          "name": "Gregory Grigoriou",
+          "avatar":  "https://cdn.dribbble.com/users/31506/avatars/small/3185ffb41aad6d71d2f2ea642ec0f494.jpg?1731936767"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 16,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 1200,
+          "icon": "img/watch.svg"
+        }
+      },
+
+      {
+        "image": "img/outcrowd.png",
+        "author": {
+          "name": "Outcrowd",
+          "avatar":  "https://cdn.dribbble.com/users/702789/avatars/small/62dc313bebbc78f08ffd3076b6228377.png?1646754829"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 47,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 2900,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Software design"
+      },
+
+      {
+        "image": "img/bertalan.png",
+        "author": {
+          "name": "Bertalan Gombos",
+          "avatar": "https://cdn.dribbble.com/users/8839010/avatars/small/de24c39719a77e573bf6c52cfe3962dc.png?1695750648"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 35,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 1300,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Infinite Play Logo Design by Bertalan Gombos"
+      },
+
+      {
+        "image": "img/strangehell.jpg",
+        "author": {
+          "name": "strangehelix.bio",
+          "avatar":  "https://cdn.dribbble.com/users/4764472/avatars/small/4e34be637dc12a1f5ebae984267b5d8c.png?1686467014"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 58,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 1500,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Logo design"
+      },
+
+      {
+        "image": "img/tino.jpg",
+        "author": {
+          "name": "Tino",
+          "avatar":  "https://cdn.dribbble.com/users/22638087/avatars/small/6da11f4ba9e5734b9d6efd07607b92fd.jpg?1734045120"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 75,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 1300,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Crypto app concept"
+      }
+    ]
+  }
+  
+
+
+  
