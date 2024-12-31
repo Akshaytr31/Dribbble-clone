@@ -136,10 +136,30 @@ const shotsDropdown = document.querySelector('.shots-dropdown');
   
     // dropdownBtnShots.addEventListener('click', () => {
     
-    //     dropdownShots.classList.toggle('activeS');
+    //     dropdownShots.classList.toggle('activeSg');
      
     //     svgIcon.classList.toggle('rotate');
     // });
+
+
+
+
+
+const popularBtn=document.querySelector('.container_block2-btn1')
+const popularElm=document.querySelector('.Popular-elm')
+
+popularBtn.addEventListener('click',()=>{
+  popularElm.classList.toggle('see')
+})
+
+
+
+
+
+
+
+
+
 
     
 
@@ -387,5 +407,186 @@ fetch('properties.json')
 
 
 
+
+
+
+  // filtering
+
+
+// function filterByWatchRange(range){
+//   return data.item.filter(item=>{
+//     const watchCount =item.watch.count;
+
+//     switch (range){
+//       case "Blove 1000":
+//       return watchCount<1000;
+//       case "1001-5000":
+//         return watchCount>=1001 && watchCount <=5000
+//       case "5001-10000":
+//         return watchCount>=5001 && watchCount <=10000
+//       case "Above 10000":
+//         return watchCount>10000
+//       default:
+//         return true
+
+//     }
+//   })
+// }
+
+// document.querySelectorAll(".dropdown-options li").forEach(li => {
+//   li.addEventListener("click", function () {
+//       const selectedRange = li.getAttribute("data-value");
+
+//       // Update selected text
+//       document.querySelector(".dropdown-selected").textContent = selectedRange;
+
+//       // Filter data
+//       const filteredItems = filterByWatchRange(selectedRange);
+
+//       // Update UI
+//       const resultsContainer = document.getElementById("filtered-results");
+//       resultsContainer.innerHTML = ""; // Clear previous results
+
+//       filteredItems.forEach(item => {
+//           const div = document.createElement("div");
+//           div.innerHTML = `<img src="${item.image}" alt="${item.hover}" /><p>${item.hover}</p>`;
+//           resultsContainer.appendChild(div);
+//       });
+//   });
+// });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const categoryDropdown = document.getElementById('category-dropdown');
+  const watchDropdown = document.getElementById('watch-dropdown');
+  const itemContainer = document.getElementById('item-list');
+
+  let selectedCategory = 'All'; // Default filter value for category
+  let selectedWatch = 'All'; // Default filter value for watch count
+
+  // Fetch data from properties.json
+  fetch('properties.json')
+      .then(response => response.json())
+      .then(data => {
+          // Event listener for category dropdown
+          categoryDropdown.querySelectorAll('.dropdown-options li').forEach((item) => {
+              item.addEventListener('click', (event) => {
+                  selectedCategory = event.target.dataset.value; // Update selected category
+                  categoryDropdown.querySelector('.dropdown-selected').textContent = event.target.textContent;
+                  renderItems(data.items); // Re-render items
+              });
+          });
+
+          // Event listener for watch dropdown
+          watchDropdown.querySelectorAll('.dropdown-options li').forEach((item) => {
+              item.addEventListener('click', (event) => {
+                  selectedWatch = event.target.dataset.value; // Update selected watch count
+                  watchDropdown.querySelector('.dropdown-selected').textContent = event.target.textContent;
+                  renderItems(data.items); // Re-render items
+              });
+          });
+
+          // Render items on page load
+          renderItems(data.items);
+      })
+      .catch(error => {
+          console.error('Error loading JSON:', error);
+          itemContainer.innerHTML = '<li>Failed to load properties. Please try again later.</li>';
+      });
+
+  // Function to filter and render items
+  function renderItems(items) {
+      // Clear previous items
+      itemContainer.innerHTML = '';
+
+      // Filter based on selected category
+      let filteredItems = items.filter(item => {
+     
+          if (selectedCategory === 'All') return item;
+          return (selectedCategory === 'team' && item.isTeam) || (selectedCategory === 'pro' && item.isPro);
+      });
+
+      // Further filter based on watch count
+      filteredItems = filteredItems.filter(item => {
+          switch (selectedWatch) {
+              case 'All':
+                return true
+              case 'below1000':
+                  return item.watch.count < 1000;
+              case '1001-5000':
+                  return item.watch.count >= 1001 && item.watch.count <= 5000;
+              case '5001-10000':
+                  return item.watch.count >= 5001 && item.watch.count <= 10000;
+              case 'above10000':
+                  return item.watch.count > 10000;
+              default:
+                  return true;
+          }
+      });
+
+      // If no items match the filters
+      if (filteredItems.length === 0) {
+          itemContainer.innerHTML = '<li>No items found for the selected filters.</li>';
+          return;
+      }
+
+      // Display filtered items
+      const fragment = document.createDocumentFragment();
+      filteredItems.forEach(item => {
+          const itemElement = document.createElement('div');
+          itemElement.innerHTML = `
+              <div class="block3-image2">
+                  <img src="${item.image}" alt="">
+                  <div class="hover">
+                      <span>${item.hover}</span>
+                      <div class="inner-items">
+                          <div class="save"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" class="icon ">
+                             <path d="M3.33337 5.2C3.33337 4.0799 3.33337 3.51984 3.55136 3.09202C3.74311 2.71569 4.04907 2.40973 4.42539 2.21799C4.85322 2 5.41327 2 6.53337 2H9.46671C10.5868 2 11.1469 2 11.5747 2.21799C11.951 2.40973 12.257 2.71569 12.4487 3.09202C12.6667 3.51984 12.6667 4.0799 12.6667 5.2V14L8.00004 11.3333L3.33337 14V5.2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           </svg>
+                          </div>
+                          <div class="love">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" class="icon ">
+                                  <path d="M10.7408 2C13.0889 2 14.6667 4.235 14.6667 6.32C14.6667 10.5425 8.11856 14 8.00004 14C7.88152 14 1.33337 10.5425 1.33337 6.32C1.33337 4.235 2.91115 2 5.2593 2C6.60745 2 7.48893 2.6825 8.00004 3.2825C8.51115 2.6825 9.39263 2 10.7408 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="block3_prop">
+                  <div class="block3_prop-main">
+                      <div class="block3_prop-sub">
+                          <img class="photo" alt="${item.author.name}" width="24" height="24" src="${item.author.avatar}">
+                          <span>${item.author.name}</span>
+                      </div>
+                      <div class="block3_cat">
+                          ${item.isPro ? '<a href="#" class="property-a2"><span class="pro">PRO</span></a>' : ''}
+                          ${item.isTeam ? '<a href="#" class="property-a2"><span class="pro">TEAM</span></a>' : ''}
+                      </div>
+                      <div class="property-elm2">
+                          <div class="property-elm2-like">
+                              <div class="likes">
+                                  <a href="#">
+                                      <img src="${item.likes.icon}">
+                                      <span>${item.likes.count}</span>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="property-elm2-watch">
+                              <div class="watch">
+                                  <a href="#">
+                                      <img src="${item.watch.icon}">
+                                      <span>${item.watch.count}</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          `;
+          fragment.appendChild(itemElement);
+      });
+      itemContainer.appendChild(fragment);
+  }
+});
 
 

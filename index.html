@@ -39,8 +39,8 @@
                     <div class="container_btnc">
                         <input type="text" placeholder="What are you looking for?" class="input">
                         <div class="shots-dropdown">
-                            <div class="shots-flex">
-                              <div class="shots-selected">Shots</div>
+                            <div class="shots-flex ">
+                              <div class="shots-selected" id="dropdownToggle">Shots</div>
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="icon btn-dropdown-caret">
                                 <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
                               </svg>
@@ -190,12 +190,17 @@
             <div class="contsiner_block2M">
                 <div class="container_block2-btn1">
                     <span class="dropdownBtn2">
-                        <a href="#"><span>Popular</span>
+                        <a><span>Popular</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="icon btn-dropdown-caret">
                                 <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
                                 </svg>
                         </a>
                     </span>
+                </div>
+                <div class="Popular-elm">
+                    <div class="Popular-emts">All</div>
+                    <div class="Popular-emts">likes top-bottom</div>
+                    <div class="Popular-emts">likes bottom-top</div>
                 </div>
                 <div class="container_block2-scroll">
                     <span class="scroll_span-back">
@@ -237,24 +242,24 @@
                 <form class="block2-form">
                     <div class="block2-flex">
                         <label>Category</label>
-                        <div class="custom-dropdown">
+                        <div class="custom-dropdown" id="category-dropdown">
                         <div class="drop-flex">
-                            <div class="dropdown-selected">Team</div>
+                            <div class="dropdown-selected">All</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="icon btn-dropdown-caret">
                             <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
                             </svg>
                         </div>
                         <ul class="dropdown-options">
-                            <li data-value="local" class="active">Team</li>
-                            <li data-value="Global">Pro</li>
-                            <li data-value="Global">All</li>
+                            <li data-value="team">Team</li>
+                            <li data-value="pro">Pro</li>
+                            <li data-value="All" class="active">All</li>
                         </ul>
                         <input type="hidden" name="category" id="category1" value="local">
                         </div>
                     </div>
                     <div class="block2-flex">
                         <label>Watch</label>
-                        <div class="custom-dropdown">
+                        <div class="custom-dropdown" id="watch-dropdown">
                             <div class="drop-flex">
                             <div class="dropdown-selected">Belove 1000</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img" class="icon btn-dropdown-caret">
@@ -262,17 +267,20 @@
                             </svg>
                             </div>
                             <ul class="dropdown-options">
-                            <li data-value="local" class="active">Belove 1000</li>
-                            <li data-value="Global">1001-5000</li>
-                            <li data-value="Global">5001-10000</li>
-                            <li data-value="Global">Above 10000</li>
+                                <li data-value="All" class="active">All</li>
+                                <li data-value="below1000">Below 1000</li> <!-- Changed value here -->
+                                <li data-value="1001-5000">1001-5000</li> <!-- Changed value here -->
+                                <li data-value="5001-10000">5001-10000</li> <!-- Changed value here -->
+                                <li data-value="above10000">Above 10000</li>
                             </ul>
                             <input type="hidden" name="category" id="category1" value="local">
                         </div>
                     </div>  
+                    
                 </div>
-
-                  </form>                  
+                <div class="filtered-result" id="item-list"></div>
+             </form>  
+                            
             </div>
         </div>
         <div class="container_block3">

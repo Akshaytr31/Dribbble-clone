@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Monna';
+    font-family: Mona;
     src: url(font/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
 }
 @font-face {
@@ -20,7 +20,7 @@
 body{
     margin: 0;
     color: #0d0c22;
-    font-family: Monna;
+    font-family: Mona;
 }
 body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
@@ -37,7 +37,7 @@ body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     color: #fff;
     transition: 0.4s ease-in-out;
     color: #060318;
-    font-family: monna;
+    font-family: mona;
 }
 
 .sticky {
@@ -61,7 +61,7 @@ body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     width: 100%;
     transition: 0.4s ease-in-out;
     color: #060318;
-    font-family: monna;
+    font-family: mona;
 } */
 .nav-main{
     display: none;
@@ -214,7 +214,7 @@ body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
     width: 100%;
     color: #060318;
     font-size: 18px;
-    font-family: Monna;
+    font-family: Mona;
     font-weight: 700;
     line-height: 22px;
     padding: 16px 0;
@@ -339,7 +339,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Monna;
+    font-family: Mona;
     margin: 0;
     margin-top: 2px;
 }
@@ -383,7 +383,7 @@ ul{
 }
 
 .container_h2{
-    font-family:Monna;
+    font-family:Mona;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -436,7 +436,7 @@ ul{
     padding: 0 24px 0 16px;
     font-size: 14px;
     color: #0d0c22;
-    font-family: monna;
+    font-family: mona;
 
 }
 input:focus{
@@ -563,7 +563,7 @@ input:focus{
 
 
 .container_elm1{
-    font-family: Monna;
+    font-family: Mona;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -579,7 +579,7 @@ input:focus{
 }
 
 .container_elm2 a{
-    font-family:monna;
+    font-family:mona;
     font-size: 14px;
     text-decoration: none;
     height: 27px;
@@ -633,7 +633,7 @@ input:focus{
 }
 .dropdownBtn2 a{
     text-decoration: none;
-    font-family: Monna;
+    font-family: Mona;
     padding: 18.5px 43px 19px 18px;
     border: 1.5px solid rgba(231, 231, 233, 0.9);
     border-radius: 8px;
@@ -672,7 +672,7 @@ input:focus{
     border-top: 1px solid #f3f3f4;
     position: relative;
     text-align: center;
-    font-family: Monna;
+    font-family: Mona;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -686,7 +686,7 @@ input:focus{
     font-size: 100%;
     vertical-align: baseline;
     text-align: center;
-    font-family: Monna;
+    font-family: Mona;
     font-weight: 400;
     line-height: 20px;
     color: #0d0c22;
@@ -722,7 +722,7 @@ input:focus{
     font-size: 100%;
     vertical-align: baseline;
     text-align: center;
-    font-family: Monna;
+    font-family: Mona;
     font-weight: 400;
     line-height: 20px;
     color: #0d0c22;
@@ -785,15 +785,21 @@ input:focus{
     text-decoration: none;
 }
 
+ul.container_block2-ul li:first-child {
+    
+    background-color:#f8f7f4; 
+    height: 36px;
+    border-radius: 99999px;
+}
 
 
 .container_block2-btn2{
-    flex: 0 0 auto;
+    flex: 0 0 200px;
     order: 2;
     display: flex;
     /* flex: 0 0 200px; */
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
 }
 
@@ -860,14 +866,14 @@ input:focus{
     width: 100%;
 }
 .block2-form label{
-    font-family: Monna;
+    font-family: Mona;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 10px;
 }
 .block2-category select{
-    font-family: Monna;
+    font-family: Mona;
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
@@ -914,7 +920,7 @@ input:focus{
     width: 100%;
     border: 1.5px solid #f8f9f9;
     border-radius: 20px;
-    font-family: monna;
+    font-family: mona;
     font-size: 16px;
     height: 56px;
     margin-bottom: 20px;
@@ -1072,7 +1078,6 @@ input:focus{
   .shots-dropdown.open svg.rotated{
     transform: rotate(180deg);
   }
-  
 
 
 
@@ -1081,11 +1086,38 @@ input:focus{
 
 
 
+/* ?????p?opular */
 
 
 
+ .popular-elm{
+    position: absolute;
+    top: 73px;
+    z-index: 99;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 50px 0px rgba(27, 32, 50, .1);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.7s ease;
+    font-size: 14;
+ }
+ .popular-elm div{
+    padding: 10px;
+    border-radius: 10px;
+ }
 
 
+ .Popular-emts:hover {
+    background-color: #9e9ea7;
+ }
+
+
+ .popular-elm.see{
+    opacity: 1;
+    visibility: visible;
+ }
 
 
 
@@ -1093,7 +1125,7 @@ input:focus{
 /* ///////////third block */
 
 .container_block3{
-    padding: 16px 0 16px;
+    padding: 0px 0 16px;
     margin-bottom: 40px;
 
 }
@@ -1128,7 +1160,7 @@ input:focus{
 } */
 .hover{
     position: absolute;
-    bottom: 32px;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1207,7 +1239,7 @@ input:focus{
     border-radius: 50%;
 }
 .property-elm1 a .name{
-    font-family: Monna;
+    font-family: Mona;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -1219,7 +1251,8 @@ input:focus{
     color: #0d0c22;
 }
 .pro{
-    padding: 3px;
+    height: 16px;
+    padding: 2px 3px;
     border-radius: 3px;
     background-color: #ccc;
     font-size: 10px;
@@ -1228,13 +1261,14 @@ input:focus{
     line-height: 1;
     text-transform: uppercase;
     color: white;
+   
 }
 .property-elm2{
     display: flex;
     flex: 1;
     justify-content: flex-end;
     color: #9e9ea7;
-    font-family: Monna;
+    font-family: Mona;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -1321,6 +1355,7 @@ input:focus{
 
 
 .block3-image2{
+    position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -1380,7 +1415,7 @@ input:focus{
     transition-delay: 0.1s;
     background-color: #fff;
     color: #0d0c22;
-    font-family: Monna;
+    font-family: Mona;
     font-feature-settings: 'ss01';
 }
 .footer-scroll{
@@ -1392,7 +1427,7 @@ input:focus{
     padding-inline: 24px;
     overflow: hidden;
     overflow-x: scroll;
-    font-family: Monna;
+    font-family: Mona;
     font-feature-settings: 'ss01';
     white-space: nowrap;
 }
@@ -1576,7 +1611,7 @@ input:focus{
     height: 18px;
 }
 .footer_socialMedias a svg{
-    fill: rgb(59,58,76);
+    fill: rgb(13,13,13);
     height: 18px;
     width: 18px;
 }
@@ -1620,7 +1655,44 @@ input:focus{
 
 
 
+.filtered-result {
+    padding: 16px 0;
+    display: grid;
+    padding-bottom: 0;
+;
+    grid-gap: 36px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    position: relative;
+}
 
+.result-item {
+    display: none; /* Initially hidden */
+    width: 200px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.result-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* .result-item p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+} */
+
+.dropdown-options li.active {
+    font-weight: 500;
+    color: #010306;
+}
+
+.dropdown-selected {
+    font-size: 14px;
+    font-weight: 500;
+} 
 
 
 
@@ -1656,6 +1728,9 @@ input:focus{
     .block3-ol{
         padding-right: 32px;
         padding-left: 32px;
+    }
+    .footer_elm{
+        padding: 0 32px;
     }
     .footer_elm2{
         flex-direction: row;
@@ -1734,6 +1809,7 @@ input:focus{
     }
     .nav-container-elm a{
         top: 0;
+        margin-top: 0;
     }
     .nav-container-btns{
         display: flex;
@@ -1745,7 +1821,18 @@ input:focus{
          color: #0d0c22;
          font-weight: 700;
          width: 83px;
-         padding-top: 1px;
+         margin-top: 1px;
+        
+    }
+
+
+
+    .dropdownMenu{
+        top: 92;
+        padding: 32px;
+        padding-top: 17px;
+        padding-bottom: 15px;
+        border-top: 1px solid #e7e7e9;
     }
 }
 
@@ -1764,8 +1851,11 @@ input:focus{
         flex-direction: row;
         gap: 20px;
     }
+    .filtered-result{
+        padding: 32px 0px 0px;
+    }
     .container_block3{
-        padding: 32px 0px 40px;
+        padding: 0px 0px 40px;
         margin-bottom: 0;
     }
     .block3-navTop {
@@ -1774,9 +1864,15 @@ input:focus{
     .block3-main{
         
     }
+    .block3-btn a{
+        margin-top: 15px;
+    }
     .container_block2{
         padding: 32px;
         padding-bottom: 0;
+    }
+    .container_block2-btn1{
+        margin-right: 32px;
     }
     .contsiner_block2M{
         flex-wrap:unset;
@@ -1786,11 +1882,20 @@ input:focus{
         padding: 0;
         margin: 0;
         order: unset;
-        width: 74%;
+        overflow: hidden;
+        
+    }
+    .scroll_span-forword a svg {
+        width: 13px;
+        height: 12px;
     }
 }
 
-
+    @media screen and (min-width:1024px){
+        .container_block2-btn1{
+            margin-right: 40px;
+        }
+    }
 
 
 
@@ -1904,19 +2009,72 @@ input:focus{
         margin-left: 3px;
 
     }
+    .container_block2-scroll{
+        
+    }
    
     
 
 }
 
-
+@media  screen and (min-width:1300px) {
+    .container_block2-btn1 {
+        flex: 0 0 150px;
+    }
+}
 
 
 
 @media screen and (min-width:1600px){
     .block3-ol{
-        grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));    }
+        grid-template-columns: repeat(auto-fill, minmax(336px, 1fr));   
+     }
+     .filtered-result{
+        grid-template-columns:repeat(auto-fill, minmax(336px, 1fr))
+     }
+     .container_block2-ul{
+        justify-content: center;
+     }
+
+
+
+
+     @keyframes scroll-left{
+        0%{
+            transform: translateX(0);
+        }
+        10%{
+            transform: translateX(-1%);
+        }
+        25%{
+            transform: translateX(-2%);
+        }
+        50%{
+            transform: translateX(0);
+        }
+        75%{
+            transform: translateX(-2%);
+        }
+        90%{
+            transform: translateX(-1%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
