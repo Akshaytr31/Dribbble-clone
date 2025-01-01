@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Mona;
+    font-family: "Mona";
     src: url(font/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
 }
 @font-face {
@@ -383,7 +383,7 @@ ul{
 }
 
 .container_h2{
-    font-family:Mona;
+    font-family:"Mona";
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -587,7 +587,7 @@ input:focus{
     background-color: #f3f3f6;
     color: #3a3546;
     display: inline-flex;
-    align-items: center;
+    padding-top: 4px;
     box-sizing: border-box;
     justify-content: center;
     border-radius: 1e+07px;
@@ -794,7 +794,7 @@ ul.container_block2-ul li:first-child {
 
 
 .container_block2-btn2{
-    flex: 0 0 200px;
+    flex: 0 0 auto;
     order: 2;
     display: flex;
     /* flex: 0 0 200px; */
@@ -1117,6 +1117,12 @@ ul.container_block2-ul li:first-child {
  .popular-elm.see{
     opacity: 1;
     visibility: visible;
+ }
+ .icon.btn-dropdown-caret {
+    transition: transform 0.3s ease;
+ }
+ .icon.btn-dropdown-caret.rotate {
+    transform: rotate(180deg);
  }
 
 
@@ -1740,8 +1746,10 @@ ul.container_block2-ul li:first-child {
     .container_block2{
         padding-inline: 32px;
     }
+    .block3-btn a{
+        margin-top: 15px;
+    }
 }
-
 
 
 
@@ -1851,6 +1859,9 @@ ul.container_block2-ul li:first-child {
         flex-direction: row;
         gap: 20px;
     }
+    .container_block2-btn2{
+        flex: 0 0 200px;
+    }
     .filtered-result{
         padding: 32px 0px 0px;
     }
@@ -1864,15 +1875,13 @@ ul.container_block2-ul li:first-child {
     .block3-main{
         
     }
-    .block3-btn a{
-        margin-top: 15px;
-    }
+  
     .container_block2{
         padding: 32px;
         padding-bottom: 0;
     }
     .container_block2-btn1{
-        margin-right: 32px;
+        margin-right: 40px;
     }
     .contsiner_block2M{
         flex-wrap:unset;
@@ -2064,19 +2073,6 @@ ul.container_block2-ul li:first-child {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
