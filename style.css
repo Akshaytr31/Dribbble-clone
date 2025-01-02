@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Mona";
+    font-family: Mona;
     src: url(font/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
 }
 @font-face {
@@ -20,7 +20,7 @@
 body{
     margin: 0;
     color: #0d0c22;
-    font-family: Mona;
+    font-family: "Mona";
 }
 body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
@@ -1029,7 +1029,7 @@ ul.container_block2-ul li:first-child {
   }
 
 
-  .shots-options{
+  /* .shots-options{
     background: #fff;
     position: absolute;
     width: 150px;
@@ -1044,14 +1044,45 @@ ul.container_block2-ul li:first-child {
     transition: opacity 0.3s ease, transform 0.3s ease; 
    
 
-  }
-  .shots-dropdown.open .shots-options{
+  } */
+  /* .shots-dropdown.open .shots-options{
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+    display: block;
     
    
+  } */
+
+  .shots-options {
+    position: absolute;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 12px;
+    width: 150px;
+    box-shadow: 0px 15px 50px 0px rgba(27, 32, 50, .1);
+    
   }
+  
+  .shots-dropdown.open .shots-options {
+    display: block;
+  }
+  
+  .shots-options li.active {
+    font-weight: bold;
+  }
+  
+  .icon.btn-dropdown-caret {
+    transition: transform 0.3s ease;
+  }
+  
+  .shots-dropdown.open .icon.btn-dropdown-caret {
+    transform: rotate(180deg);
+  }
+  
 
   .shots-options li{
     padding: 10px;
@@ -1059,11 +1090,12 @@ ul.container_block2-ul li:first-child {
     color: #333;
     cursor: pointer;
     padding: 12px;
-  }
-  .shots-options li.active {
-    font-weight: 600;
     
   }
+  /* .shots-options li.active {
+    font-weight: 600;
+    
+  } */
   .shots-flex svg{
     fill: black;
     height: 9px;
@@ -1079,6 +1111,9 @@ ul.container_block2-ul li:first-child {
     transform: rotate(180deg);
   }
 
+
+
+  
 
 
 

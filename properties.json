@@ -262,7 +262,39 @@
           "icon": "img/watch.svg"
         },
         "hover":"Crypto app concept"
+      },
+
+      {
+        "image": "img/flat eco.png",
+        "author": {
+          "name": "Vectora",
+          "avatar":"https://cdn.dribbble.com/users/6567474/avatars/small/b849c692c6c9fc9cfdca178b90e354d2.png?1607746416" 
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 75,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 612,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Zapmail - Marketing site webflow"
       }
     ]
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
