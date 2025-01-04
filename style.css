@@ -14,6 +14,10 @@
     font-family: wfvisuslsans-semibold;
     src: url(font/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
 }
+@font-face {
+    font-family: mona2;
+    src: url(font/mona2.woff2);
+}
 *{
     box-sizing: border-box;
 }
@@ -579,7 +583,7 @@ input:focus{
 }
 
 .container_elm2 a{
-    font-family:mona;
+    font-family: mona;
     font-size: 14px;
     text-decoration: none;
     height: 27px;
@@ -2256,8 +2260,6 @@ ul.container_block2-ul li:first-child {
         top: 27%;
     }
 }
-
-
 
 
 

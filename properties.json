@@ -281,6 +281,177 @@
           "icon": "img/watch.svg"
         },
         "hover":"Zapmail - Marketing site webflow"
+      },
+      {
+        "image": "img/lizad.png",
+        "author": {
+          "name": "Vectora",
+          "avatar":"https://cdn.dribbble.com/users/2973/avatars/small/2cc04b639b97098ca3c82f9e5ed226e0.png?1636824436"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 60,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 500,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Lizard Galaxy"
+      },
+      {
+        "image": "img/nixtio.png",
+        "author": {
+          "name": "Nixtio",
+          "avatar":"https://cdn.dribbble.com/users/1057940/avatars/normal/f068710cc8e5fcebcbcd8f1f75d1b4ef.gif?1732126488"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 90,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 830,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Crypto App Design"
+      },
+
+      {
+        "image": "img/vis.jpg",
+        "author": {
+          "name": "Marka Works Branding Agency",
+          "avatar":"https://cdn.dribbble.com/users/2947436/avatars/normal/665b3ec329aa85b862ca15f442cf480f.jpg?1610231507"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 70,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 6200,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Viscerex Branding and Packaging Design - Supplement"
+      },
+
+
+      {
+        "image": "img/visco.png",
+        "author": {
+          "name": "Focus Lab + Odi",
+          "avatar":"https://cdn.dribbble.com/users/414899/avatars/normal/fc12e2f8f542a52abd94590de3836499.png?1617890437"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 70,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 9000,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Very Visual Language"
+      },
+
+      {
+        "image": "img/peter.png",
+        "author": {
+          "name": "Peter Voth",
+          "avatar":"https://cdn.dribbble.com/users/42659/avatars/small/729d1b0be99397dcecf5330727e18fb4.png?1565080316"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 77,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 13600,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Game of Thrones Playing Cards (Back design)"
+      },
+
+
+      {
+        "image": "img/purrimage.png",
+        "author": {
+          "name": "Purrweb UI/UX Agency",
+          "avatar":"https://cdn.dribbble.com/users/5031392/avatars/normal/944b08efb66577ba400d5838490ea5b9.png?1597658879"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 149,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 16600,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Dating Mobile iOS App"
+      },
+
+
+
+      {
+        "image": "img/Follo.webp",
+        "author": {
+          "name": "Folio Illustration Agency",
+          "avatar":"https://cdn.dribbble.com/users/730703/avatars/normal/eee24de7146f290f73f64ef9373cf0a5.jpg?1536163934"
+
+        },
+        "isTeam": true,
+        "likes": {
+          "count": 149,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 11000,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Skeleton Crew"
+      },
+      {
+        "image": "img/kiendric.jpg",
+        "author": {
+          "name": "Kendrick Kidd",
+          "avatar":"https://cdn.dribbble.com/users/5276/avatars/normal/dbb8a09fa15c56b2cc0c5632dc37a449.jpg?1534262382"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 139,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 11000,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Packaging"
+      },
+      {
+        "image": "img/json.jpg",
+        "author": {
+          "name": "Kendrick Kidd",
+          "avatar":"https://cdn.dribbble.com/users/1706517/avatars/normal/4e44a3ef845eba588276ddbcbf62855a.jpg?1728897083"
+
+        },
+        "isPro": true,
+        "likes": {
+          "count": 129,
+          "icon": "img/like.svg"
+        },
+        "watch": {
+          "count": 12000,
+          "icon": "img/watch.svg"
+        },
+        "hover":"Packaging"
       }
     ]
   }
