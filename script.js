@@ -56,23 +56,35 @@ document.addEventListener("scroll",function(){
 const dropdownHeaders = document.querySelectorAll('.Explore > a');
 
 dropdownHeaders.forEach(header => {
-  header.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const dropdownMenu = header.nextElementSibling;
+  const dropdownMenu = header.nextElementSibling;
 
-    
-    dropdownMenu.classList.toggle('listDown');
+
+  header.addEventListener('mouseenter', () => {
+    dropdownMenu.classList.add('listDown');
   });
 
+ 
+  dropdownMenu.addEventListener('mouseenter', () => {
+    dropdownMenu.classList.add('listDown');
+  });
+
+  
+  header.addEventListener('mouseleave', () => {
+    dropdownMenu.classList.remove('listDown');
+  });
+
+  dropdownMenu.addEventListener('mouseleave', () => {
+    dropdownMenu.classList.remove('listDown');
+  });
+
+  
   document.addEventListener('click', (e) => {
-    
-    if (!header.contains(e.target)) {
-      const dropdownMenu = header.nextElementSibling;
+    if (!header.contains(e.target) && !dropdownMenu.contains(e.target)) {
       dropdownMenu.classList.remove('listDown');
     }
   });
 });
+
 
 
 
@@ -687,7 +699,28 @@ closeAlert.addEventListener('click',()=>{
 })
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("scrollTopButton");
 
+  window.addEventListener("scroll", function () {
+      const scrollTop = window.scrollY; // Current scroll position
+      const viewportHeight = window.innerHeight; // Height of the viewport
+      const documentHeight = document.documentElement.scrollHeight; // Total height of the document
+
+      // Check if the user is near the bottom of the page
+      if (scrollTop + viewportHeight >= documentHeight-550) {
+          scrollButton.classList.add("absolute");
+          scrollButton.classList.remove("fixed");
+      }else if(scrollTop===0){
+          scrollButton.classList.add("absolute");
+          scrollButton.classList.remove("fixed");
+      }
+      else {
+          scrollButton.classList.add("fixed");
+          scrollButton.classList.remove("absolute");
+      } 
+  });
+});
 
 
 
@@ -710,12 +743,3 @@ document.addEventListener('click',function(event){
     event.preventDefault()
   }
 })
-
-
-
-
-
-
-
-
-
