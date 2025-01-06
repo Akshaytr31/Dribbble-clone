@@ -37,7 +37,7 @@ body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 .nav {
     position: relative;
     width: 100%;
-    background: #333;
+    /* background: #333; */
     color: #fff;
     transition: 0.4s ease-in-out;
     color: #060318;

@@ -32,12 +32,10 @@ dropdownHeaders.forEach(header => {
     dropdownMenu.classList.add('listDown')
   });
 
- 
   dropdownMenu.addEventListener('mouseenter', () => {
     dropdownMenu.classList.add('listDown')
   });
 
-  
   header.addEventListener('mouseleave', () => {
     dropdownMenu.classList.remove('listDown')
   });
@@ -46,13 +44,12 @@ dropdownHeaders.forEach(header => {
     dropdownMenu.classList.remove('listDown')
   });
 
-  
   document.addEventListener('click', (e) => {
     if (!header.contains(e.target) && !dropdownMenu.contains(e.target)) {
       dropdownMenu.classList.remove('listDown')
     }
-  });
-});
+  })
+})
 
 
 
@@ -82,6 +79,11 @@ window.addEventListener('click', (event) => {
 navButton.addEventListener('click', () => {
   navButton.classList.toggle('active')
 })
+
+
+
+
+
 
 
 
@@ -556,6 +558,9 @@ closeAlert.addEventListener('click',()=>{
 })
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const scrollButton = document.getElementById("scrollTopButton")
 
@@ -600,3 +605,7 @@ document.addEventListener('click',function(event){
     event.preventDefault()
   }
 })
+
+
+
+
